@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='style.css'>
+  <script src='script.js'></script>
+</head>
+<body>
+  <h1>Conversor de Temperatura</h1>
+  <table>
+    <tr>
+      <td>
+        <input type="number" id="tempInput" placeholder="Insira a temperatura" oninput="updateResults()" step="0.01">
+      </td>
+      <td>
+        <select id="unitInput" onchange="updateResults()">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" id="fahrenheitOutput" readonly>
+      </td>
+      <td>
+        Fahrenheit (°F)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" id="celsiusOutput" readonly>
+      </td>
+      <td>
+        Celsius (°C)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" id="kelvinOutput" readonly>
+      </td>
+      <td>
+        Kelvin (K)
+      </td>
+    </tr>
+  </table>
+  <button onclick="showAttribution()">Fonte Credível</button>
+</body>
+</html>
